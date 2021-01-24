@@ -7,6 +7,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import project from './project'
 import page from './page'
 import product from './product'
+import staticpage from './staticpage'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -19,5 +20,6 @@ export default createSchema({
     project,
     page,
     product,
+    staticpage,
   ]),
 })

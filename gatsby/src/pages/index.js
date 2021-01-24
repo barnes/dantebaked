@@ -6,6 +6,7 @@ import "fontsource-questrial";
 import "fontsource-noto-sans-jp/700.css";
 import "fontsource-nunito";
 import Layout from "../components/Layout";
+import BlockContent from "@sanity/block-content-to-react";
 
 const IndexStyles = styled.div`
   background-color: white;
@@ -15,14 +16,18 @@ const IndexStyles = styled.div`
 `;
 
 export default function Index({ data }) {
-  const projects = data.projects.nodes;
-  console.log(projects);
+  const pageData = data.pageData.nodes;
+  console.log(pageData)
   return (
     <Layout>
+    {pageData.map((page =>
     <IndexStyles>
-      <h1>Ryan's Gatsby Boilerplate</h1>
-      <p>A quick and dirty Gatsby & Sanity boilerplate. Few schemas, layouts, styling.</p>
+      <>
+        <Img fluid={page.image.asset.fluid} />
+        <BlockContent blocks={page._rawText} />
+        </>
     </IndexStyles>
+    ))}
     
     </Layout>
     
@@ -31,25 +36,21 @@ export default function Index({ data }) {
 
 export const query = graphql`
   query {
-  projects: allSanityProject {
+    pageData: allSanityStaticpage(filter: {_id: {eq: "ba9f6083-3155-4c2d-992f-b1016517773a"}}) {
     nodes {
-      id
-      description
-      title
+      _id
+      _rawText
       image {
           asset {
-            fluid(maxWidth: 410) {
+            fluid(maxWidth: 1080) {
               ...GatsbySanityImageFluid
             }
           }
         }
-      link
-      github
-      date
+      }
     }
-    }
-    
   }
+
 `;
 
 

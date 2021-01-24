@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link, StaticQuery, useStaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
 const NavStyles = styled.div`
@@ -14,7 +14,7 @@ const NavStyles = styled.div`
   }
   li a {
     display: block;
-    background-color: #7DAF9C;
+    background-color: #FFCDB2;
     padding: 10px;
     margin:5px;
     box-shadow: 5px 10px #888888;
@@ -53,10 +53,13 @@ export default function Nav() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <Link to="/products">The Goods</Link>
         </li>
         <li>
-          <Link to="/products">Products</Link>
+          <Link to="/findme">Find Me</Link>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/dantebaked/">Insta</a>
         </li>
         {pages.map((page) =>
           <li>
