@@ -1,4 +1,4 @@
-//const path = require("path");
+/* const path = require("path");
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 
@@ -36,4 +36,4 @@ export async function createPages(params) {
     await Promise.all([
       turnPagesIntoPages(params),
     ]);
-  }
+  } */
