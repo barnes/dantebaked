@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Boilerplate",
+    title: "DanteBaked",
+    siteUrl: "http://www.dantebaked.com",
+    description: "DanteBaked Good Foods"
   },
   plugins: [
     {
