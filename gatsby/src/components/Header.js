@@ -22,6 +22,7 @@ const HeaderStyles = styled.div`
 const LogoStyles = styled.div`
   display: grid;
   align-items:center;
+  justify-items: center;
 `;
 
 const SocialStyles = styled.div`
