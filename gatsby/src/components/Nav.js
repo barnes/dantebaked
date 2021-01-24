@@ -3,6 +3,8 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
 const NavStyles = styled.div`
+  display: grid;
+  align-items: center;
   padding:10px;
   margin: 10px;
   ul{
@@ -14,11 +16,9 @@ const NavStyles = styled.div`
   }
   li a {
     display: block;
-    background-color: #FFCDB2;
     padding: 10px;
     margin:5px;
-    box-shadow: 5px 10px #888888;
-    border-color: none;
+    text-decoration:underline;
   }
   
 `;

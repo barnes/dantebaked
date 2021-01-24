@@ -7,12 +7,17 @@ import "fontsource-noto-sans-jp/700.css";
 import "fontsource-nunito";
 import Layout from "../components/Layout";
 import BlockContent from "@sanity/block-content-to-react";
+import "@fontsource/bodoni-moda/";
 
 const IndexStyles = styled.div`
-  background-color: white;
+  font-family: "Bodoni Moda";
+  background-color: #F7BFB4;
   padding:20px;
   margin: 20px;
-  box-shadow: 5px 10px #888888;
+  //box-shadow: 5px 10px #888888;
+  .gatsby-image-wrapper {
+    height: 400px;
+  }
 `;
 
 export default function Index({ data }) {

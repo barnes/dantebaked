@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterStyles = styled.div`
-  background-color: #B5838D;
   padding:20px;
   margin: 20px;
-  box-shadow: 5px 10px #888888;
-  font-size:10px;
+  //box-shadow: 5px 10px #888888;
+  //background-color: #B5838D;
+  font-size:11px;
 `;
 
 export default function Footer() {

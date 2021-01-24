@@ -6,12 +6,17 @@ import "fontsource-questrial";
 import "fontsource-noto-sans-jp/700.css";
 import "fontsource-nunito"
 import Layout from "../components/Layout"
+import "@fontsource/bodoni-moda/";
 
 const ProductStyles = styled.div`
+  font-family: "Bodoni Moda";
   background-color: #F7BFB4;
   padding:20px;
   margin: 20px;
-  box-shadow: 5px 10px #888888;
+  //box-shadow: 5px 10px #888888;
+  .gatsby-image-wrapper {
+    height: 400px;
+  }
 `;
 
 export default function Products({ data }) {
