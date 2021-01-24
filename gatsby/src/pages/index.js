@@ -11,7 +11,7 @@ import "@fontsource/bodoni-moda/";
 
 const IndexStyles = styled.div`
   font-family: "Bodoni Moda";
-  background-color: #F7BFB4;
+  //background-color: #F7BFB4;
   padding:20px;
   margin: 20px;
   //box-shadow: 5px 10px #888888;
