@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
 const NavStyles = styled.div`
-  display: grid;
-  align-items: center;
   padding:10px;
   margin: 10px;
+  align-items:center;
+  justify-items: center;
+  ul > li {
+    display: inline-block;
+  }
   ul{
-    list-style-type:none;
+    list-style:none;
     margin: 0;
     padding: 0;
-    display: flex;
     
   }
   li a {
@@ -20,10 +22,19 @@ const NavStyles = styled.div`
     margin:5px;
     text-decoration:underline;
   }
+
+  @media (max-width: 768px) {
+    ul{
+      display:block;
+    }
+  }
   
 `;
 
 export default function Nav() {
+
+  const [open, setOpen] = useState(false);
+
   const data = useStaticQuery(graphql`
     query {
       allSanityPage {
