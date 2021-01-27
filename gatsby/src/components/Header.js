@@ -4,6 +4,7 @@ import Nav from './Nav';
 import ResponsiveNav from './ResponsiveNav'
 import "@fontsource/bodoni-moda/700.css";
 import Navbar from './Nav/Navbar';
+import Logo from './Logo';
 
 const HeaderStyles = styled.div`
   font-family: "Bodoni Moda";
@@ -38,8 +39,8 @@ export default function Header() {
           <Nav/>
             <LogoStyles>
       
-            
-            <h1>Dante Baked</h1>
+            <Logo />
+            {/* <h1>Dante Baked</h1> */}
             </LogoStyles>
             
             
