@@ -9,9 +9,9 @@ import Logo from './Logo';
 const HeaderStyles = styled.div`
   font-family: "Bodoni Moda";
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 40% auto;
   padding:20px;
-  margin: 20px;
+  margin:20px;
   //box-shadow: 5px 10px #888888;
   //background-color: #B5838D;
   h1{
@@ -25,7 +25,7 @@ const HeaderStyles = styled.div`
 const LogoStyles = styled.div`
   display:grid;
   align-items:center;
-  justify-items: left;
+  justify-items: start;
 `;
 
 const SocialStyles = styled.div`
