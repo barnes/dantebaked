@@ -13,6 +13,7 @@ const LogoStyles = styled.div`
     border-radius: 50%;
     height: 250px;
     width:250px;
+    filter: drop-shadow(0 0 1rem black);
   }
 `;
 
