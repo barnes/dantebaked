@@ -1,5 +1,5 @@
-import dotenv from 'dotenv';
-dotenv.config({ path: '.env' });
+require("dotenv").config();
+
 
 module.exports = {
   siteMetadata: {
