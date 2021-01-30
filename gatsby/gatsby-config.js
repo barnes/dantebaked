@@ -11,8 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-source-formium`,
       options: {
-        projectId: process.env.GATSBY_FORMIUM_PROJECTID,
-        accessToken: process.env.FORMIUM_TOKEN,
+        projectId: "600d70ebd0a32c0001f4a2e1",
+        accessToken: "dEEwV72iksjCk9lFMCeasLNuODVhICjWZQLVpzTu0ZkPXAOVqWqPFxmVdh1dXJ7c",
       },
     },
     {
