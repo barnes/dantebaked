@@ -70,8 +70,12 @@ export default function Nav() {
           <Link to="/findme">Find Me</Link>
         </li>
         <li>
+          <a href="/contact">Contact Me</a>
+        </li>
+        <li>
           <a href="https://www.instagram.com/dantebaked/">Insta</a>
         </li>
+        
         {pages.map((page) =>
           <li>
             <Link to={"/"+page.slug.current}>{page.title}</Link>
