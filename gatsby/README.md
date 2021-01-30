@@ -16,3 +16,9 @@
 * ~~Pages Block Content Type -> Unpacking with sanity block content to react.~~
 * ~~Pages in navigation...static query is wierd.~~
 * ~~Navigation link to root, not current page.~~
+* .env files
+* better responsive menu
+* sanity spotlighting
+* responsive image size on pages
+* contact form from formium
+

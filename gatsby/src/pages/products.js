@@ -15,7 +15,13 @@ const ProductStyles = styled.div`
   margin: 20px;
   //box-shadow: 5px 10px #888888;
   .gatsby-image-wrapper {
-    height: 400px;
+    height: 600px;
+  }
+
+  @media (max-width: 768px) {
+    .gatsby-image-wrapper {
+    height: 200px;
+  }
   }
 `;
 

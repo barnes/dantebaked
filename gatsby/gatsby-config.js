@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config({ path: '.env' });
+
 module.exports = {
   siteMetadata: {
     title: "DanteBaked",
@@ -8,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-source-sanity",
       options: {
-        projectId: "wrqc5xz8",
+        projectId: process.env.GATSBY_SANITY_KEY,
         dataset: "production",
         watchMode: true,
       },
