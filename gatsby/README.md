@@ -20,5 +20,5 @@
 * better responsive menu
 * sanity spotlighting
 * responsive image size on pages
-* contact form from formium
+* ~~contact form from formium~~
 

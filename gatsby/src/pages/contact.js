@@ -13,7 +13,7 @@ const IndexStyles = styled.div`
   margin: auto;
   //background-color: #F7BFB4;
   padding:20px;
-  width:600px;
+  width:50%;
   //box-shadow: 5px 10px #888888;
   .gatsby-image-wrapper {
     height: 400px;
@@ -22,13 +22,13 @@ const IndexStyles = styled.div`
       line-height:2rem;
       textarea {
           padding:10px;
-          width: 500px;
+          width: 100%;
           margin:10px;
       }
       input {
           padding: 10px;
           margin: 10px;
-          width: 500px;
+          width: 100%;
       }
       label {
           font-size:18px;
@@ -46,7 +46,17 @@ const IndexStyles = styled.div`
   }
 `;
 
-export default function FindMe({ data }) {
+export default function ContactMe({ data }) {
+    const [success, setSuccess] = React.useState(false);
+    if (success) {
+      return(
+        <Layout>
+        <IndexStyles>
+        <div><h1>Thank you! Your response has been recorded.</h1></div>
+        </IndexStyles>
+        </Layout>
+      )
+    }
   return (
     <Layout>
         <IndexStyles>
@@ -54,7 +64,7 @@ export default function FindMe({ data }) {
         data={data.formiumForm}
         onSubmit={async (values) => {
             await formium.submitForm('contact',values);
-            alert('success');
+            setSuccess(true);
         }} />
         </IndexStyles>
     
